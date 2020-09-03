@@ -1,0 +1,125 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+
+/* Custon proporties */
+
+:root {
+    /* E67E22 */
+    --colorPrimario: #3498DB;
+    --colorPrimarioOscuro: #10639b;
+    --colorPanelEncabzadoAzul: #d9edf7;
+    --colorPanelEncabzadoGris: #f5f5f5;
+    /* --colorPrimario: #CE8142; */
+    /* --colorPrimario: #4e8492; */
+    --colorParrafo: rgb(142, 142, 142);
+    --fuenteKalam: 'Kalam', cursive;
+    --fuenteMonserrat: 'Montserrat', sans-serif;
+    --fuenteRobotoSlab: 'Roboto Slab', serif;
+}
+
+
+/* Padding below the footer and lighter body text */
+
+
+/* body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+} */
+
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+
+/* Carousel base class */
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+
+/* Declare heights because of positioning of img element */
+
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item>img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+.carousel-item .btn {
+    font-size: .9rem;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(10, 8, 8, 0.3);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item .btn:hover {
+    background-color: var(--colorPrimarioHover);
+    border-color: var(--colorPrimarioHover);
+}
+
+.carousel-item .btn-primary {
+    background-color: var(--colorPrimarioOscuro);
+    color: #ffffff;
+    border: 2px solid var(--colorPrimarioOscuro);
+}
+
+
+/* CSS Proyecto
+  -------------------------------------------------- */
+
+.carousel-caption h1 {
+    opacity: .8;
+    color: rgb(62, 138, 18) !important;
+    background-color: aliceblue !important;
+    font-family: var(--fuenteRobotoSlab);
+    font-size: 1.4rem !important;
+    border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+}
+
+.carousel-caption p.parrafo-carousel {
+    opacity: .8;
+    font-family: var(--fuenteMonserrat);
+    font-size: 0.9rem !important;
+    color: var(--colorPrimarioOscuro) !important;
+    background-color: aliceblue !important;
+    border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+}
+
+.carousel-caption p.parrafo-carousel-rojo {
+    opacity: .8;
+    color: rgb(131, 38, 10) !important;
+}
+
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+
+@media (min-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2.8rem !important;
+    }
+    .carousel-caption p.parrafo-carousel {
+        font-size: 1.3rem !important;
+    }
+}
